@@ -1,20 +1,2 @@
 ﻿  ModuleTaskManager.cpp
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\memory(2042,35): error C2664:  'std::tuple<void (__cdecl ModuleTaskManager::* )(void),ModuleTaskManager>::tuple(std::tuple<void (__cdecl ModuleTaskManager::* )(void),ModuleTaskManager> &&)': cannot convert argument 1 from '_Ty' to 'std::allocator_arg_t'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\memory(2042,35): error C2664:         with
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\memory(2042,35): error C2664:         [
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\memory(2042,35): error C2664:             _Ty=void (__cdecl ModuleTaskManager::* )(void)
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\memory(2042,35): error C2664:         ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\memory(2041,1): message :  No constructor could take the source type, or constructor overload resolution was ambiguous
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\thread(52): message :  see reference to function template instantiation 'std::unique_ptr<_Tuple,std::default_delete<_Ty>> std::make_unique<_Tuple,void(__cdecl ModuleTaskManager::* )(void),ModuleTaskManager,0>(void (__cdecl ModuleTaskManager::* &&)(void),ModuleTaskManager &&)' being compiled
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\thread(52): message :         with
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\thread(52): message :         [
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\thread(52): message :             _Ty=_Tuple
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\thread(52): message :         ]
-C:\Users\guillermogs2\Desktop\MultiThreading\ModuleTaskManager.cpp(30): message :  see reference to function template instantiation 'std::thread::thread<void(__cdecl ModuleTaskManager::* )(void),ModuleTaskManager,void>(_Fn &&,ModuleTaskManager &&)' being compiled
-C:\Users\guillermogs2\Desktop\MultiThreading\ModuleTaskManager.cpp(30): message :         with
-C:\Users\guillermogs2\Desktop\MultiThreading\ModuleTaskManager.cpp(30): message :         [
-C:\Users\guillermogs2\Desktop\MultiThreading\ModuleTaskManager.cpp(30): message :             _Fn=void (__cdecl ModuleTaskManager::* )(void)
-C:\Users\guillermogs2\Desktop\MultiThreading\ModuleTaskManager.cpp(30): message :         ]
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\chrono(595): message :  see reference to class template instantiation 'std::chrono::duration<double,std::ratio<1,1>>' being compiled
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\chrono(172): message :  see reference to class template instantiation 'std::chrono::duration<__int64,std::nano>' being compiled
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\include\chrono(574): message :  see reference to class template instantiation 'std::chrono::time_point<std::chrono::steady_clock,std::chrono::steady_clock::duration>' being compiled
+  MultiThreading.vcxproj -> C:\Users\guillermogs2\Documents\Nueva carpeta\MultiThreading\x64\Debug\MultiThreading.exe
