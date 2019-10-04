@@ -20,12 +20,14 @@ void ModuleTaskManager::threadMain()
 
 			if(scheduledTasks.empty())
 				event.wait(lock);
-
+			if (exitFlag)
+				break;
 			tmp_task = scheduledTasks.front();
 			scheduledTasks.pop();
 		}
 
 		tmp_task->execute();
+		std::unique_lock<std::mutex> lock(mtx); // Lock the mutex
 		finishedTasks.push(tmp_task);
 		
 	}
@@ -58,12 +60,13 @@ bool ModuleTaskManager::update()
 bool ModuleTaskManager::cleanUp()
 {
 	// TODO 5: Notify all threads to finish and join them
-	
 	event.notify_all();
+	exitFlag = true;
 	for (unsigned int i = 0u; i < MAX_THREADS; i++)
 	{
 		threads[i].join();
 	}
+
 	return true;
 }
 
